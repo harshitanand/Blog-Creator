@@ -1,0 +1,35 @@
+doctype html
+
+html(lang='en-us')
+  <base href="/">
+  head
+    link(rel='stylesheet', type='text/css', media='screen', href='/css/bootstrap/bootstrap.min.css')
+    link(rel='stylesheet', type='text/css', media='screen', href='/js/bower_components/font-awesome/css/font-awesome.css')
+
+  body(ng-app='blogapp', style='background-color:#491438;')
+    header
+      .jumbotron(style='opacity:0.7')
+        .text-center
+          h1
+            | CallHub's Blog
+          p
+            | This is a simple blog app that shows all the posts. 
+            | Details of post include its content, likes for post & comments made on posts 
+    div(ng-view='')
+
+    script(src='/js/bower_components/jquery/dist/jquery.js')
+    script(src='/js/bower_components/angular/angular.js')
+    script(src='/js/bower_components/angular-resource/angular-resource.js')
+    script(src='/js/bower_components/angular-cookies/angular-cookies.js')
+    script(src='/js/bower_components/angular-sanitize/angular-sanitize.js')
+    script(src='/js/bower_components/angular-route/angular-route.js')
+    script(src='/js/bower_components/angular-bootstrap/ui-bootstrap-tpls.js')
+    script(src='/js/app/app.js')
+    script(src='/js/app/main/main.js')
+    script(src='/js/app/main/main.controller.js')
+    script(src='/js/app/posts/posts.controller.js')
+
+
+    
+
+

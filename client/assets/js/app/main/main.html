@@ -1,0 +1,12 @@
+<div class='container'>
+  <div class='row'>
+    <ul style='list-style-type:none'>
+      <li ng-repeat="post in posts" class="col-sm-4">
+        <h3>{{post.title}}</h3>
+        <p>{{post.body[0] | limitTo:300}}...<button class='btn btn-primary btn-sm' ng-click='more(post.id)'>Read More<i class='fa fa-file-text'></i></button></p>
+        <p class="fa fa-comment push-left"> {{post.comments.length}}</p>
+        <p class="fa fa-heart push-right"> {{post.likes}}</p>
+      </li>
+    </ul>
+  </div>
+</div>
