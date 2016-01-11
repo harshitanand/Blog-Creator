@@ -13,7 +13,7 @@ Seperate API and Front-end MVC implementation { Two Tier }
   
   In Order to run the project 
     
-    just clone the Repo and change directory to servers type in
+    just clone the Repo and change directory to Server type in
     
       pip install -r requirements.txt
       
